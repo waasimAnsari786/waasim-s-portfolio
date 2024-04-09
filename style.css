@@ -1,0 +1,1120 @@
+/* my css varaibles start*/
+
+:root {
+  /* my divs bg color */
+  --my-divs-bg-color: #18171b;
+
+  /* my div's content bg color */
+  --my-divs-content-bg-color: #9747FF;
+
+  /* my divs border color */
+  --my-divs-border-color: #363636;
+
+  /* my  fonts family */
+  --my-font-family: "Finlandica", sans-serif;
+
+  /* my  fonts sizes */
+  --my-sm-font-size: 1.6rem;
+  --my-md-font-size: 2rem;
+  --my-lg-font-size: 2.5rem;
+  --my-xl-font-size: 3.5rem;
+
+  /* my  fonts line height */
+  --my-xl-font-line-height: 4.5rem;
+  --my-lg-font-line-height: 2.7rem;
+  --my-md-font-line-height: 2.8rem;
+  --my-sm-font-line-height: 1.9rem;
+
+  /* my  fonts colors */
+  --my-font-color-2: rgb(112, 112, 112);
+  --my-font-color: white;
+
+  /* about section's font's color */
+  --my-about-section-font-color: rgb(165, 165, 165);
+
+  /* letter spacing */
+  --my-letter-spacing: .5px;
+
+  /* my container mainbox */
+  --my-divs-border-radius: 2rem;
+  --my-divs-padding: 3rem 3rem;
+  --my-divs-border: .1rem solid var(--my-divs-border-color);
+  --my-bg-color: var(--my-divs-bg-color);
+
+
+  /* my transition on hov */
+  --my-transition-on-hov: 0.5s;
+}
+
+/* my css varaibles end*/
+
+
+
+
+
+
+/* my-animations start */
+
+@keyframes ctnr-1-shape-ani {
+  0% {
+    transform: scale(1.3, 1.3)
+  }
+
+  100% {
+    transform: scale(1, 1)
+  }
+}
+
+@keyframes ctnr-1-shape-ani-2 {
+  25% {
+    transform: translate(-20rem, 8rem) rotate(45deg);
+  }
+
+  50% {
+    transform: translate(0rem, 8rem) rotate(90deg);
+  }
+
+  75% {
+    transform: translate(-15rem, 0rem) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(0rem, 0rem) rotate(360deg);
+  }
+}
+
+@keyframes ctnr-1-shape-ani-3 {
+  25% {
+    transform: translate(0rem, 35rem) rotatex(180deg);
+  }
+
+  50% {
+    transform: translate(-25rem, 20rem) rotatex(360deg) scale(1);
+  }
+
+  75% {
+    transform: translate(-40rem, 35rem) rotatex(-180deg) scale(1.3);
+  }
+
+  100% {
+    transform: translate(-40rem, 3rem) rotatex(-360deg);
+  }
+}
+
+@keyframes ctnr-1-shape-ani-4 {
+  0% {
+    transform: scale(1.6);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.6);
+  }
+
+  75% {
+    transform: rotatex(180deg) scale(1);
+  }
+
+  100% {
+    transform: rotatey(180deg) scale(1.6);
+  }
+}
+
+@keyframes ctnr-1-shape-ani-5 {
+  0% {
+    transform: rotateY(45deg);
+  }
+
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes thumbs-up-ani {
+  0% {
+    transform: rotate(15deg)
+  }
+
+  100% {
+    transform: rotate(-15deg)
+  }
+}
+
+@keyframes ab-ctnr-1-mb-shape-ani {
+  0% {
+    transform: translate(-60rem, 0rem) rotate(-360deg);
+  }
+
+  100% {
+    transform: translate(0rem, 0rem) rotate(360deg);
+  }
+}
+
+@keyframes ab-ctnr-1-mb-shape-ani-2 {
+  50% {
+    transform: translate(-20rem, 13rem) rotate(-360deg);
+  }
+
+  100% {
+    transform: translate(0rem, 23rem) rotate(360deg);
+  }
+}
+
+@keyframes ab-ctnr-1-mb-shape-ani-3 {
+  50% {
+    transform: translate(17rem, -13rem) rotate(-360deg);
+  }
+
+  100% {
+    transform: translate(0rem, -23rem) rotate(360deg);
+  }
+}
+
+@keyframes ab-ctnr-1-mb-shape-ani-3 {
+  50% {
+    transform: translate(17rem, -13rem) rotate(-360deg);
+  }
+
+  100% {
+    transform: translate(0rem, -23rem) rotate(360deg);
+  }
+}
+
+@keyframes ab-ctnr-1-mb-shape-ani-4 {
+  25% {
+    transform: translate(-47rem, 2rem) rotatey(90deg);
+  }
+
+  50% {
+    transform: translate(0rem, 8rem) rotatey(-90deg);
+  }
+
+  75% {
+    transform: translate(-47rem, 16rem) rotatey(90deg);
+  }
+
+  100% {
+    transform: translate(0rem, 24rem) rotatey(-90deg);
+  }
+}
+
+
+/* my-animations end */
+
+
+
+
+
+
+/* my font family */
+.finlandica-uniquifier {
+  font-family: "Finlandica", sans-serif;
+}
+
+
+
+
+/* my font sizes according to all screens width code start*/
+
+html {
+  font-size: 62.5%;
+}
+
+@media(min-width:1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media(max-width:1199px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media(max-width:992px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 50%;
+  }
+
+}
+
+@media(max-width:576px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/* my font sizes according to all screens width code end*/
+
+
+
+
+
+
+
+/* code of some element of html's body */
+
+html body {
+  background-color: black;
+}
+
+button {
+  padding: 0rem;
+}
+
+html a {
+  text-decoration: none;
+}
+
+/* code of some element of html's body end */
+
+
+
+
+
+
+
+
+/* topbar code start */
+
+.ctnr-1 {
+  padding: 5rem 0rem;
+}
+
+.topbar {
+  background-color: var(--my-divs-bg-color);
+  border: .1rem solid var(--my-divs-border-color);
+  border-radius: 2rem;
+}
+
+.topbar-inner {
+  transition: var(--my-transition-on-hov);
+  border-radius: 2rem;
+}
+
+.topbar:hover .topbar-inner {
+  box-shadow: 0rem 0rem 1rem 1rem var(--my-divs-bg-gradient);
+}
+
+.logo {
+  color: var(--my-font-color) !important;
+  font-size: var(--my-xl-font-size) !important;
+  font-weight: bold;
+  font-family: var(--my-font-family);
+}
+
+.logo-2 {
+  color: var(--my-divs-content-bg-color) !important;
+}
+
+.pg-name {
+  color: var(--my-font-color);
+  font-size: var(--my-md-font-size);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 0rem 1.5rem;
+  transition: var(--my-transition-on-hov);
+  font-family: var(--my-font-family);
+}
+
+.pg-name:hover {
+  color: var(--my-divs-content-bg-color)
+}
+
+
+.nav-btn {
+  color: var(--my-font-color);
+  background-color: var(--my-divs-content-bg-color);
+  border-radius: 3rem;
+  text-transform: capitalize;
+  border: none;
+  font-size: var(--my-md-font-size);
+  font-weight: bold;
+  padding: 1.5rem 2rem;
+  font-family: var(--my-font-family);
+}
+
+.nav-btn-2 {
+  border-radius: 100%;
+  padding: 1.5rem 2rem;
+  transition: var(--my-transition-on-hov);
+}
+
+.nav-btn-icon {
+  transition: var(--my-transition-on-hov);
+  transform: rotate(180deg);
+}
+
+.my-nav-icon {
+  color: var(--my-divs-content-bg-color);
+  font-size: 3rem;
+}
+
+
+@media(max-width:992px) {
+  #my-navi {
+    text-align: center;
+  }
+
+  .nav-btn-sec {
+    margin: 2rem;
+  }
+
+}
+
+/* topbar code end */
+
+
+
+
+
+
+
+
+
+
+/* container 1 code start */
+
+.ctnr-1-mb {
+  background: var(--my-bg-color);
+  padding: var(--my-divs-padding);
+  border: var(--my-divs-border);
+  border-radius: var(--my-divs-border-radius);
+  position: relative;
+  transition: 1s;
+} 
+
+.ctnr-1-mb:hover{
+  box-shadow: inset 0 0 1rem .1rem var(--my-divs-border-color);
+}
+
+.ctnr-1-mb-2:hover{
+  box-shadow: inset 0 0 1rem .1rem var(--my-divs-border-color);
+}
+
+.ctnr-1-mb-2 {
+  background-color: var(--my-divs-bg-color);
+  padding: 3rem 3rem;
+  border: var(--my-divs-border);
+  border-radius: var(--my-divs-border-radius);
+  position: relative;
+}
+
+.ctnr-1-mb-3 {
+  padding: 0rem 3rem;
+  position: relative;
+}
+
+.ctnr-1-circle {
+  height: 10rem;
+  width: 10rem;
+  border: .1rem solid var(--my-divs-border-color);
+  border-radius: 100%;
+  position: relative;
+  transition: var(--my-transition-on-hov);
+  float: left;
+}
+
+.ctnr-1-circle:hover {
+  border: .1rem solid var(--my-divs-content-bg-color);
+  box-shadow: 0rem 0rem .5rem .1rem var(--my-divs-border-color);
+}
+
+.ctnr-1-pic-sec{
+  position: relative;
+}
+
+.ctnr-1-pic-2{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ctnr-1-img-tag-2 {
+  border-radius: 100%;
+}
+
+.ctnr-1-mb-text {
+  color: var(--my-font-color);
+  background-color: var(--my-divs-content-bg-color);
+  font-size: var(--my-md-font-size);
+  font-family: var(--my-font-family);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+.ctnr-1-mb-text-2 {
+  color: var(--my-font-color);
+  font-size: var(--my-sm-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: var(--my-transition-on-hov);
+}
+
+.ctnr-1-bio-sec:hover .ctnr-1-mb-text-2 {
+  color: var(--my-divs-content-bg-color);
+}
+
+.ctnr-1-mb-text-3 {
+  color: var(--my-font-color);
+  font-size: var(--my-lg-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: var(--my-transition-on-hov);
+}
+
+.ctnr-1-mb-text-4 {
+  color: var(--my-divs-content-bg-color);
+  font-size: var(--my-lg-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: var(--my-transition-on-hov);
+}
+
+.color-change-text {
+  color: var(--my-font-color-2);
+}
+
+.circle-inner-line {
+  background-color: transparent;
+  height: 8rem;
+  width: .1rem;
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+  transform: rotate(45deg);
+  transition: var(--my-transition-on-hov);
+}
+
+.ctnr-1-circle:hover .circle-inner-line {
+  background-color: var(--my-divs-content-bg-color);
+  transform: rotate(-45deg);
+}
+
+.circle-inner-line-2 {
+  background-color: transparent;
+  height: 8rem;
+  width: .1rem;
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+  transform: rotate(-45deg);
+  transition: var(--my-transition-on-hov);
+}
+
+.ctnr-1-circle:hover .circle-inner-line-2 {
+  background-color: var(--my-divs-content-bg-color);
+  transform: rotate(-140deg);
+}
+
+.ctnr-1-git-icon {
+  color: var(--my-font-color);
+  font-size: 4rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background-color: var(--my-divs-bg-color);
+  transition: var(--my-transition-on-hov);
+  z-index: 2;
+}
+
+.ctnr-1-linkedin-icon {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  padding: .2rem .5rem .4rem .5rem;
+  font-size: 3.5rem;
+}
+
+.ctnr-1-circle:hover .ctnr-1-git-icon {
+  color: var(--my-divs-content-bg-color);
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1199px) {
+  .ctnr-1-mb-2 {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width:992px) {
+  .ctnr-1-circle-sec {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+}
+
+
+.ctnr-1-mb-text-5 {
+  color: var(--my-font-color);
+  font-size: var(--my-xl-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  line-height: var(--my-xl-font-line-height);
+}
+
+.thumbs-up-pic {
+  margin-left: 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  animation-name: thumbs-up-ani;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ctnr-1-marq-text {
+  color: var(--my-font-color-2);
+  font-size: var(--my-sm-font-size);
+  font-family: var(--my-font-family);
+  text-transform: capitalize;
+  border: .1rem solid #303030;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  transition: var(--my-transition-on-hov);
+  font-weight: bold;
+}
+
+.ctnr-1-marq-text:hover {
+  color: var(--my-font-color);
+  border: .1rem solid transparent;
+  background-color: var(--my-divs-content-bg-color);
+}
+
+.ctnr-1-marq-icon {
+  color: var(--my-font-color-2);
+  font-size: 3rem;
+  border: .1rem solid #303030;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: var(--my-transition-on-hov);
+  margin-left: 1rem;
+}
+
+.ctnr-1-marq-icon:hover {
+  color: var(--my-font-color);
+  border: .1rem solid transparent;
+  background-color: var(--my-divs-content-bg-color);
+}
+
+.ctnr-1-marq-text-2 {
+  color: var(--my-font-color-2);
+  font-size: var(--my-sm-font-size);
+  font-family: var(--my-font-family);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ctnr-1-expr-text {
+  color: var(--my-font-color);
+  font-size: 5rem;
+  font-family: var(--my-font-family);
+  font-weight: bold;
+}
+
+.ctnr-1-proj-pic {
+  border-radius: 1rem;
+}
+
+.copyright {
+  color: var(--my-font-color);
+  font-size: var(--my-md-font-size);
+  font-family: var(--my-font-family);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.services-sec-icon {
+  color: var(--my-divs-content-bg-color);
+  font-size: 4rem;
+}
+
+/* container 1 code end */
+
+
+
+
+
+/* about container start*/
+
+.ab-text {
+  color: var(--my-about-section-font-color);
+  font-size: var(--my-md-font-size);
+  font-family: var(--my-font-family);
+  line-height: var(--my-md-font-line-height);
+  font-weight: bold;
+}
+
+.dowload-resume-icon {
+  color: var(--my-font-color);
+  font-size: var(--my-md-font-size);
+  border: .1rem solid var(--my-divs-border-color);
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.ab-ctnr-1-exper-text {
+  color: var(--my-about-section-font-color);
+  font-size: var(--my-sm-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  line-height: var(--my-sm-font-line-height);
+}
+
+.ab-exper-sec {
+  margin-bottom: 4rem;
+}
+
+#ab-projects {
+  padding-top: 11rem;
+}
+
+.ab-ctnr-1-pic-sec{
+  position: relative;
+}
+
+
+
+
+
+
+@media(min-width:993px) {
+  .ab-last-sec {
+    display: flex;
+  }
+
+  .ab-last-proj-sec {
+    order: 2;
+  }
+}
+
+@media(max-width:1199px) {
+  .ab-exper-sec {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width:992px) {
+  .ab-ctnr-1-bio-and-pic-sec {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ab-ctnr-1-bio-sec {
+    text-align: center;
+  }
+
+  .ab-ctnr-1-pic-sec {
+    margin: 0rem auto;
+  }
+
+  .ab-last-sec {
+    display: flex;
+  }
+
+  .ab-last-edu-sec {
+    order: -1;
+  }
+}
+
+@media(max-width:576px) {
+  .circle-inner-line , .circle-inner-line-2 {
+    display: none;
+  }
+
+  .ab-ctnr-1-pic-sec {
+    margin: 0rem auto;
+  }
+}
+
+@media (max-width:400px) {
+  #linkedin-icon,
+  #git-hub-icon{
+    position: absolute;
+    left:2.7rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:350px) {
+  #linkedin-icon,
+  #git-hub-icon{
+    position: absolute;
+    left:2rem;
+    font-size: 3rem;
+  }
+}
+
+/* about container end*/
+
+
+
+
+
+
+/* works container 1 */
+
+.my-work-pic {
+  border-radius: 2rem;
+  height: 27rem;
+  overflow: hidden;
+  perspective: 50rem;
+  transition: 5s;
+  position: relative;
+}
+
+.my-work-pic img{
+  transition: var(--my-transition-on-hov);
+  transform-origin: bottom;
+  height: 27rem;
+  width: 100%;
+}
+
+.wr-pic-inner {
+  width: 100%;
+  height: 100%;
+  background: var(--my-divs-content-bg-color);
+  border-radius: 2rem;
+  transition: var(--my-transition-on-hov);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-work-pic:hover .wr-pic-inner{
+  transform: rotateX(0);
+  opacity: 1;
+  transition-delay: var(--my-transition-on-hov);
+}
+
+.my-work-pic:hover img{
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+
+/* my work's pic 2 start */
+
+.my-work-pic-2 {
+  border-radius: 2rem;
+  height: 55rem;
+  overflow: hidden;
+  perspective: 50rem;
+  transition: 5s;
+  position: relative;
+}
+
+.wr-pic-inner-2 {
+  width: 100%;
+  height: 100%;
+  background: var(--my-divs-content-bg-color);
+  border-radius: 2rem;
+  transition: var(--my-transition-on-hov);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-work-pic-2 img{
+  transition: var(--my-transition-on-hov);
+  transform-origin: bottom;
+  height: 55rem;
+  width: 100%;
+}
+
+.my-work-pic-2:hover img{
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+
+.my-work-pic-2:hover .wr-pic-inner-2{
+  transform: rotateX(0);
+  opacity: 1;
+  transition-delay: var(--my-transition-on-hov);
+}
+
+/* my work's pic 2 end */
+
+.wr-text{
+  color: var(--my-font-color);
+  font-size: var(--my-xl-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+}
+
+.wr-text-2{
+  color: var(--my-font-color);
+  font-size: var(--my-lg-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+  border: .1rem solid var(--my-font-color);
+  padding: .5rem 1rem;
+}
+
+/* works container 1 end*/
+
+
+
+
+
+
+/* contact container 1 */
+
+.cn-text {
+  color: var(--my-divs-content-bg-color);
+  font-size: var(--my-sm-font-size);
+  font-family: var(--my-font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.cn-icon {
+  color: var(--my-divs-content-bg-color);
+  font-size: 3.6rem;
+  border: .1rem solid var(--my-divs-border-color);
+  border-radius: 100%;
+  padding: 1.7rem;
+}
+
+.cn-icon-2 {
+  color: var(--my-divs-content-bg-color);
+  font-size: 2rem;
+  border: .1rem solid var(--my-divs-content-bg-color);
+  border-radius: 100%;
+  padding: .8rem;
+  transition: var(--my-transition-on-hov);
+}
+
+.my-cn-sec:hover .cn-icon-2 {
+  color: var(--my-font-color);
+  border: .1rem solid var(--my-font-color);
+}
+
+.cn-form {
+  border: .1rem solid var(--my-divs-border-color);
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 1.5rem;
+  outline: none;
+  color: var(--my-font-color-2);
+  font-family: var(--my-font-family);
+  width: 100%;
+}
+
+.my-cn-sec {
+  background-color: var(--my-divs-bg-color);
+  border: .1rem solid var(--my-divs-border-color);
+  border-radius: 5rem;
+  min-width: 2rem;
+  display: inline-block;
+  padding: 1.5rem;
+  transition: all linear 1s;
+}
+
+.my-cn-sec:hover {
+  background-color: var(--my-divs-content-bg-color);
+  border: .1rem solid var(--my-divs-content-bg-color);
+}
+
+.cn-my-detail-sec {
+  position: relative;
+}
+
+.cn-my-detail-sec-inner {
+  position: absolute;
+  left: 9rem;
+}
+
+.cn-btn {
+  color: var(--my-font-color);
+  background-color: var(--my-divs-content-bg-color);
+  border-radius: 3rem;
+  text-transform: capitalize;
+  border: none;
+  font-size: var(--my-md-font-size);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-family: var(--my-font-family);
+}
+
+.cn-btn-2 {
+  border-radius: 100%;
+  padding: 1rem 2rem;
+  transition: var(--my-transition-on-hov);
+  overflow: hidden;
+}
+
+.cn-btn-sec:hover .cn-btn-icon {
+  transform: rotate(90deg);
+}
+
+.cn-btn-icon {
+  transition: var(--my-transition-on-hov);
+}
+
+
+
+/* contact container 1 end*/
+
+
+
+
+
+
+
+/* my all animated png images  */
+
+.ctnr-1-mb-ani-shape {
+  position: absolute;
+  top: 0rem;
+  right: 3rem;
+  animation-name: ctnr-1-shape-ani;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  transform-origin: top center;
+  animation-direction: alternate;
+}
+
+.ctnr-1-mb-ani-shape-2 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  animation-name: ctnr-1-shape-ani-2;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ctnr-1-mb-ani-shape-3 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  animation-name: ctnr-1-shape-ani-3;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ctnr-1-mb-ani-shape-4 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  animation-name: ctnr-1-shape-ani-4;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ctnr-1-mb-ani-shape-5 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  animation-name: ctnr-1-shape-ani-5;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ab-ctnr-1-mb-ani-shape {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  animation-name: ab-ctnr-1-mb-shape-ani;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ab-ctnr-1-mb-ani-shape-2 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  animation-name: ab-ctnr-1-mb-shape-ani-2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ab-ctnr-1-mb-ani-shape-3 {
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  animation-name: ab-ctnr-1-mb-shape-ani-3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ab-ctnr-1-mb-ani-shape-4 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  animation-name: ab-ctnr-1-mb-shape-ani-4;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: var(--my-transition-on-hov);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* m all animated png images end */
+
+.box {
+  border: .1rem solid white;
+}
+
+#particles-js{
+  background-color: #9747FF;
+  height: 100vh;
+}
